@@ -1,1 +1,157 @@
-a
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Study Note</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-icon">📚</div>
+        <div>
+          <h1>Study Note</h1>
+          <p>나의 학습 아카이브</p>
+        </div>
+      </div>
+
+      <nav class="menu" aria-label="학습 노트 메뉴">
+        <a href="#home" class="active">🏠 홈</a>
+        <a href="#ai">🤖 AI 수업</a>
+        <a href="#coding">💻 코딩 노트</a>
+        <a href="#design">🎨 디자인 노트</a>
+        <a href="#assignments">📝 과제 정리</a>
+        <a href="#review">✅ 복습 체크</a>
+      </nav>
+
+      <div class="side-card">
+        <span>이번 주 목표</span>
+        <strong>배운 내용 3개 정리하기</strong>
+      </div>
+    </aside>
+
+    <main class="main" id="home">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Notion Style Learning Homepage</p>
+          <h2>내가 배운 내용을<br />보기 좋게 정리하는 공간</h2>
+          <p class="hero-text">
+            수업 내용, 코딩 기록, 과제 정리, 복습 체크리스트를 한눈에 볼 수 있는
+            개인 학습 노트 홈페이지입니다.
+          </p>
+        </div>
+        <div class="hero-note">
+          <span>Today</span>
+          <strong>HTML/CSS 홈페이지 구조 만들기</strong>
+          <p>레이아웃, 카드, 사이드바, 카테고리 구성 이해하기</p>
+        </div>
+      </section>
+
+      <section class="dashboard">
+        <article class="stat-card">
+          <span>AI 수업</span>
+          <strong>12</strong>
+          <p>정리한 노트</p>
+        </article>
+        <article class="stat-card">
+          <span>코딩 노트</span>
+          <strong>8</strong>
+          <p>실습 기록</p>
+        </article>
+        <article class="stat-card">
+          <span>복습 필요</span>
+          <strong>5</strong>
+          <p>헷갈린 개념</p>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <div class="section-block" id="ai">
+          <div class="section-title">
+            <h3>최근 학습 노트</h3>
+            <span>Latest Notes</span>
+          </div>
+
+          <div class="note-list">
+            <article class="note-card important">
+              <div class="note-header">
+                <span class="tag purple">AI 수업</span>
+                <time>2026.07.03</time>
+              </div>
+              <h4>프롬프트 엔지니어링 기초</h4>
+              <p>
+                AI에게 원하는 답변을 얻기 위해 역할, 조건, 출력 형식을 구체적으로
+                작성하는 방법을 정리했습니다.
+              </p>
+              <div class="keywords">
+                <span>#역할부여</span>
+                <span>#조건설정</span>
+                <span>#출력형식</span>
+              </div>
+            </article>
+
+            <article class="note-card" id="coding">
+              <div class="note-header">
+                <span class="tag blue">코딩</span>
+                <time>2026.07.03</time>
+              </div>
+              <h4>HTML 기본 구조</h4>
+              <p>
+                웹페이지의 뼈대가 되는 head, body, section, article 태그의 역할을
+                학습했습니다.
+              </p>
+              <div class="keywords">
+                <span>#HTML</span>
+                <span>#시맨틱태그</span>
+              </div>
+            </article>
+
+            <article class="note-card" id="design">
+              <div class="note-header">
+                <span class="tag green">디자인</span>
+                <time>2026.07.02</time>
+              </div>
+              <h4>카드형 레이아웃 디자인</h4>
+              <p>
+                노션처럼 여백이 넓고, 모서리가 둥근 카드 UI를 활용해 정보를 정리하는
+                방법을 정리했습니다.
+              </p>
+              <div class="keywords">
+                <span>#UI</span>
+                <span>#카드디자인</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="right-panel">
+          <section class="mini-block" id="assignments">
+            <h3>카테고리</h3>
+            <ul class="category-list">
+              <li><span>🤖 AI 수업</span><b>12</b></li>
+              <li><span>💻 코딩 노트</span><b>8</b></li>
+              <li><span>🎨 디자인 노트</span><b>5</b></li>
+              <li><span>📝 과제 정리</span><b>4</b></li>
+            </ul>
+          </section>
+
+          <section class="mini-block" id="review">
+            <h3>복습 체크리스트</h3>
+            <label class="check-item"><input type="checkbox" checked /> HTML 구조 이해</label>
+            <label class="check-item"><input type="checkbox" checked /> CSS 선택자 정리</label>
+            <label class="check-item"><input type="checkbox" /> 반응형 레이아웃 복습</label>
+            <label class="check-item"><input type="checkbox" /> GitHub 업로드 방법</label>
+          </section>
+
+          <section class="mini-block quote-block">
+            <h3>오늘의 메모</h3>
+            <p>“배운 내용을 작게라도 정리하면, 나중에 포트폴리오가 된다.”</p>
+          </section>
+        </aside>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
